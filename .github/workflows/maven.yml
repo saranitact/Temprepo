@@ -13,6 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+
     
 #services:
 #  mongodb:
@@ -28,6 +29,9 @@ jobs:
        
       with:
         java-version: 1.8
+          
+    - name: Create mongoDB Docker container
+    - uses: DigiPie/mongo-action@v1.0.1     
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     #  run: mvn compile --file pom.xml
