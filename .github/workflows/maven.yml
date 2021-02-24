@@ -31,8 +31,14 @@ jobs:
     - name: Print Date
       run: date
           
-   # - name: Create mongoDB Docker container
-   #   uses: DigiPie/mongo-action@v1.0.1    
+    - name: Create mongoDB Docker container
+      uses: DigiPie/mongo-action@v1.0.1
+      
+    - name: Add data to Inventory Collection
+      run: mongoimport --collection=Inventory --db=BookstoreDBtest --file=inventory.json
+    - name: Add data to UserColl collection
+      run: mongoimport --collection=UserColl --db=BookstoreDBtest --file=usercoll.json
+      
        
     - name: Build with Maven
       run: mvn -B package --file pom.xml
