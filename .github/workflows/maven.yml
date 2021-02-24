@@ -32,7 +32,8 @@ jobs:
       run: date
           
     - name: Create mongoDB Docker container
-      uses: DigiPie/mongo-action@v1.0.1
+      #uses: DigiPie/mongo-action@v1.0.1
+      run: sudo docker run -d -p 27017:27017 mongo:latest
       
     - name: Add data to Inventory Collection
       run: mongoimport --collection=Inventory --db=BookstoreDB --file=inventory.json
