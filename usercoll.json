@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5ae5f6dfe9b4ec29b08a456d"},"name":"ABC","password":"pass","email":"a@b.com","domain":"Continuous Integration"}
+
+{"_id":{"$oid":"5b7dbf466d4f95387453aae3"},"name":"saranitact","password":"saranitact","email":"saranitact@gmail.com","domain":"Continuous Deployment"}
