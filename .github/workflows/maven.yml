@@ -35,9 +35,9 @@ jobs:
       uses: DigiPie/mongo-action@v1.0.1
       
     - name: Add data to Inventory Collection
-      run: mongoimport --collection=Inventory --db=BookstoreDBtest --file=inventory.json
+      run: mongoimport --collection=Inventory --db=BookstoreDB --file=inventory.json
     - name: Add data to UserColl collection
-      run: mongoimport --collection=UserColl --db=BookstoreDBtest --file=usercoll.json
+      run: mongoimport --collection=UserColl --db=BookstoreDB --file=usercoll.json
       
        
     - name: Build with Maven
