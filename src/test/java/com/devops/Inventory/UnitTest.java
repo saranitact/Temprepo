@@ -13,6 +13,20 @@ import java.util.regex.Pattern;
 
 public class UnitTest
 {
+	 @Test
+	 public void  testTestSuccess(){
+     //positive test case
+		 		 assertEquals(true, true);
+	 }
+	 
+	 
+	 @Test
+	   public void  testTestFailure(){
+		 //negative test case
+	   	assertEquals(false, false);
+	    }
+	
+	/*
 	//Unit Test Cases for login screen
 
 	 @Test
@@ -55,5 +69,6 @@ public class UnitTest
 		 //negative test case
 		 		 assertEquals(false, new AddInventory().AddInv(newname, "Open Source", "deployment", "0"));
 	 }
+	 */
 }
 
